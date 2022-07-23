@@ -1,12 +1,13 @@
+import React from 'react';
 import './style.css';
 
-const Header = (props) => {
+const Header = () => {
   return (
-    <div className='navbar'>
+    <div className='nav-bar'>
       <div>My Todo List</div>
       <div>React</div>
     </div>
   );
 };
 
-export default Header;
+export {Header};

@@ -1,0 +1,58 @@
+.add-form {
+  background-color: white;
+  border-radius: 10px;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  font-weight: 600;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px 1px grey;
+  font-size: 20px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.input-group > input {
+  width: 200px;
+  height: 20px;
+  padding: 15px 10px;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: lightgray;
+  border: none;
+  border-radius: 10px;
+}
+
+.input-group > input:focus-visible {
+  outline: solid teal 2px;
+}
+
+.form-label {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.add-input {
+  height: 40px;
+  width: 240px;
+  border: none;
+  border-radius: 12px;
+  padding: 0 12px;
+}
+
+.add-button {
+  border: none;
+  height: 40px;
+  border-radius: 10px;
+  background-color: teal;
+  width: 140px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}

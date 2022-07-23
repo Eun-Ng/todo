@@ -1,18 +1,11 @@
-.navbar {
+.nav-bar {
   background: white;
-  max-width: 1200px;
-  min-width: 800px;
   margin: 0 auto;
   display: flex;
+  justify-content: space-between;
   padding: 20px;
   font-weight: 600;
   border-radius: 10px;
   box-shadow: 1px 1px 3px 1px grey;
   font-size: 20px;
-}
-.navbar > div:nth-child(1) {
-  margin-right: auto;
-}
-.div {
-  box-sizing: border-box;
 }

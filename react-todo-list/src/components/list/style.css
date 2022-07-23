@@ -1,0 +1,25 @@
+.list-container {
+  padding: 0 24px;
+}
+
+.list-working,
+.list-done {
+  background: white;
+  margin: 0 auto;
+  display: flex;
+  min-height: 270px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px 1px grey;
+  font-size: 20px;
+}
+
+.list-working {
+  margin-bottom: 20px;
+}
+
+.working-title,
+.done-title {
+  font-size: 30px;
+  font-weight: 600;
+}

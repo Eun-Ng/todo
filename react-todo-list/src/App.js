@@ -1,10 +1,11 @@
 import './App.css';
-import Header from '../src/components/header/Header';
+import React from 'react';
+import {TodoList} from './components/pages/TodoList';
 
 function App() {
   return (
     <div className='App'>
-      <Header />
+      <TodoList />
     </div>
   );
 }

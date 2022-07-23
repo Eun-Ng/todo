@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css';
 // import LifecycleEx from './Lifecycle';
 import BucketList from './BucketList';
