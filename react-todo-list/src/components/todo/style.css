@@ -5,6 +5,10 @@
   padding: 12px 24px 24px 24px;
 }
 
+.todo-content {
+  margin: auto;
+}
+
 .button-set {
   display: flex;
   gap: 10px;
