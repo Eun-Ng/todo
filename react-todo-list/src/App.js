@@ -1,6 +1,6 @@
 import './App.css';
-import React from 'react';
-import {TodoList} from './components/pages/TodoList';
+import React, {useState} from 'react';
+import {TodoList} from './pages/TodoList';
 
 function App() {
   return (
