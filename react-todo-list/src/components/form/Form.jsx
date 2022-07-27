@@ -29,14 +29,21 @@ const Form = ({todos, setTodos}) => {
   const onSubmitHandler = (e) => {
     e.preventDefault();
 
-    const todo = {
-      id: todos.length + 1,
-      title: title,
-      text: text,
-      isDone: false,
-    };
-    setTodos([...todos, todo]);
-    console.log(todos);
+    if (title === '' || text === '') {
+      alert('empty!');
+    } else {
+      const todo = {
+        id: todos.length + 1,
+        title: title,
+        text: text,
+        isDone: false,
+      };
+      setTodos([...todos, todo]);
+      console.log(todos);
+      // input 창 초기화
+      setTitle('');
+      setText('');
+    }
   };
 
   return (

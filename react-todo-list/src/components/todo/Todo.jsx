@@ -11,13 +11,13 @@ const Todo = ({todo, onDeleteHandler, onEditHandler}) => {
         <div className='button-set'>
           <button
             className='todo-delete-button button'
-            onClick={onDeleteHandler}
+            onClick={() => onDeleteHandler(todo.id)}
           >
             삭제하기
           </button>
           <button
             className='todo-complete-button button'
-            onClick={onEditHandler}
+            onClick={() => onEditHandler(todo.id)}
           >
             완료
           </button>

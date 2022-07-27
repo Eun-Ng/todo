@@ -1,6 +1,5 @@
 import React from 'react';
 import {Todo} from '../todo/Todo';
-import {Form} from '../form/Form';
 import './style.css';
 
 const List = ({todos, setTodos}) => {
@@ -11,9 +10,9 @@ const List = ({todos, setTodos}) => {
     setTodos(copyTodos);
   };
 
-  const onEditHandler = (id) => {
+  const onEditHandler = (todoId) => {
     const copyTodos = todos.map((todo) => {
-      if (todo.id === id) {
+      if (todo.id === todoId) {
         return {
           ...todo,
           isDone: !todo.isDone,
@@ -22,6 +21,7 @@ const List = ({todos, setTodos}) => {
         return {...todo};
       }
     });
+    setTodos(copyTodos);
   };
 
   return (
