@@ -5,6 +5,7 @@ import './style.css';
 const List = ({todos, setTodos}) => {
   const onDeleteHandler = (id) => {
     const copyTodos = todos.filter((todo) => {
+      console.log(id);
       return todo.id !== id;
     });
     setTodos(copyTodos);

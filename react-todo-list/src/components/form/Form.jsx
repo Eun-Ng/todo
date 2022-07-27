@@ -4,27 +4,6 @@ import './style.css';
 const Form = ({todos, setTodos}) => {
   const [title, setTitle] = useState('');
   const [text, setText] = useState('');
-  // const [todoList, setTodoList] = useState([]);
-
-  // const initialState = {
-  //   id: 0,
-  //   title: '',
-  //   body: '',
-  //   isDone: false,
-  // };
-
-  // const [todo, setTodo] = useState(initialState);
-
-  // const onChangeHandler = (e) => {
-  //   const {name, value} = e.target;
-  //   setTodo({...todo, [name]: value, id: todos.length + 1});
-  // };
-
-  // const onSubmitHandler = (e) => {
-  //   e.preventDefault();
-  //   setTodos([...todos, todo]);
-  //   setTodo(initialState);
-  // };
 
   const onSubmitHandler = (e) => {
     e.preventDefault();
@@ -68,7 +47,7 @@ const Form = ({todos, setTodos}) => {
           }}
         />
       </div>
-      <button className='add-button' onClick={onSubmitHandler}>
+      <button className='add-button' type='submit' onClick={onSubmitHandler}>
         추가하기
       </button>
     </form>
