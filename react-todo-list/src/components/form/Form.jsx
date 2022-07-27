@@ -47,7 +47,7 @@ const Form = ({todos, setTodos}) => {
           }}
         />
       </div>
-      <button className='add-button' type='submit' onClick={onSubmitHandler}>
+      <button className='add-button' onClick={onSubmitHandler}>
         추가하기
       </button>
     </form>
